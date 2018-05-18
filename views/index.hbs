@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BTCHEADLINE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+  body{background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+<h2 class="text-center"><span class="fa fa-bitcoin"></span> BTCHEADLINES</h2>
+
+
+
+  
+
+    {{#each articles}}
+    
+      <div class="panel panel-default">
+  <div class="panel-heading"><span style="font-size:17px;" class="fa fa-bitcoin"></span> {{ this.title }}</div>
+  <div class="panel-body">
+
+    <p>{{ this.description }}<p>
+   <a  href="{{ this.url }}">Read more</a>
+
+  </div>
+
+</div>
+
+    {{/each}}
+
+
+  
+   
+<p class="text-center">Designed and hand coded by <a href="http://www.yashraj.gq" target="_blank">Yashraj Basan</a></p>
+<p class="text-center">Api which is used<a href="https://newsapi.org/" target="_blank"> NewsApi</a></p>
+<p class="text-center">
+  <a href="https://github.com/yashrajb"><span style="font-size:26px;color:black;" class="fa fa-github"></span></a>
+</p>
+
+</div>
+
+
+
+
+
+</body>
+</html>
